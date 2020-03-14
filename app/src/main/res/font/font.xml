@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+            android:fontStyle="normal"
+            android:fontWeight="400"
+            android:font="@font/anroid_font" />
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/droid" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/droid_02" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/droid_03" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/droid_04" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/droid_05" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/droid_bold" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/space_quest" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/space_quest_02" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/space_quest_03" />
+
+    <font
+            android:fontStyle="italic"
+            android:fontWeight="400"
+            android:font="@font/space_quest_04" />
+
+</font-family>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.laaltentech.abou.vehicletap.util.Status" />
+
+        <import type="android.view.View"/>
+
+        <variable
+                name="networkStatus"
+                type="Status"/>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pagination_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="48dp"
+                android:id="@+id/progress_bar"
+                android:layout_height="48dp"
+                android:visibility="@{networkStatus==Status.LOADING?View.VISIBLE:View.GONE,default=visible}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_fileName="traffic_lights.json"/>
+
+
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="No Internet"
+                android:id="@+id/refresh"
+                android:textAllCaps="true"
+                app:backgroundTint="@color/white"
+                android:visibility="@{networkStatus==Status.ERROR?View.VISIBLE:View.GONE,default=gone}"
+                app:rippleColor="@color/colorAccent"
+                app:layout_constraintTop_toBottomOf="@id/progress_bar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
